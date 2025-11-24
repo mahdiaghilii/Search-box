@@ -64,4 +64,3 @@ MySearchBox.addEventListener('input' , function(e){
 
 })
 
-//creat a search bar
