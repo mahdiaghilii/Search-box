@@ -86,3 +86,5 @@ MySearchBox.addEventListener('keydown' , function(e){
         }
 
 })
+
+// with keydown
