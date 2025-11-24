@@ -46,7 +46,27 @@ fetch('json/full_store_mock_optimized.json')
 
 let MySearchBox = document.getElementById('searchBox')
 
-MySearchBox.addEventListener('input' , function(e){
+// MySearchBox.addEventListener('input' , function(e){
+//     const searchText = e.target.value.trim().toLowerCase();
+//     const searchCard = document.querySelectorAll('.PRcard')
+//     console.log(searchText)
+    
+
+//     searchCard.forEach((item)=>{
+//         const cardTitle = item.querySelector('.title').textContent.trim().toLowerCase()
+
+//         if(cardTitle.includes(searchText)){
+//             item.style.display = 'block' //show products
+//         } else{
+//             item.style.display = 'none' //hide products
+//         }
+//     })
+
+// })
+
+
+MySearchBox.addEventListener('keydown' , function(e){
+    if(e.key==='Enter'){
     const searchText = e.target.value.trim().toLowerCase();
     const searchCard = document.querySelectorAll('.PRcard')
     console.log(searchText)
@@ -60,7 +80,9 @@ MySearchBox.addEventListener('input' , function(e){
         } else{
             item.style.display = 'none' //hide products
         }
+    
     })
 
-})
+        }
 
+})
